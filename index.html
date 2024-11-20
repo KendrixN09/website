@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kendrix Ngayi - Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f3460, #16213e);
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #00d4ff;
+            text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #aaa;
+        }
+
+        nav {
+            background: #1b1b2f;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #00d4ff;
+        }
+
+        section {
+            margin: 40px 0;
+            padding: 30px;
+            background: #1f4068;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #00d4ff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #0f3460;
+            color: #aaa;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 200px;
+            border-radius: 50%;
+            border: 4px solid #00d4ff;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
+        }
+
+        a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #ddd;
+        }
+
+        /* Welcome Sign Styles */
+        #welcome-sign {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px 40px;
+            border: 2px solid #00d4ff;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 1000;
+            animation: fadeOut 5s ease-in-out forwards;
+        }
+
+        #welcome-sign h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        /* Keyframes for glowing text */
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff;
+            }
+            to {
+                text-shadow: 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 50px #00d4ff;
+            }
+        }
+
+        /* Keyframes for fade-out effect */
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Sign -->
+    <div id="welcome-sign">
+        <h1>Welcome to Kendrix's Portfolio</h1>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>Kendrix Ngayi</h1>
+            <p>Aspiring Network Security Engineer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="container">
+        <h2>Welcome to My Portfolio</h2>
+        <img src="IMG_1246.jpeg" alt="Profile picture of Kendrix Ngayi" />
+        <p>
+            Hi, I'm Kendrix Ngayi, an aspiring Network Security Engineer from Atlanta, Georgia. Explore my portfolio to learn more about my skills, education, and background.
+        </p>
+        <p>
+            <a href="Kendrix-Resume1.1.docx" download>Download Resume</a> | <a href="https://www.linkedin.com/in/kendrix-ngayi-a122a729b/" target="_blank">LinkedIn Profile</a>
+        </p>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>
+            Hi there, I'm Kendrix Ngayi, an aspiring Network Security Engineer from Atlanta, Georgia, currently pursuing a Bachelor of Science in Information Technology with a concentration in Cyber Security at Kennesaw State University.
+        </p>
+        <p>
+            I have a strong foundation in hardware and software concepts, web design, and programming principles. I am proficient in entry-level Python and Java, skilled in HTML website design with basic CSS knowledge, and familiar with responsive design principles.
+        </p>
+        <p>
+            I also have experience working with operating systems like Windows, CentOS, and Kali Linux, along with a solid understanding of PC assembly, troubleshooting, and hardware maintenance.
+        </p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kendrix Ngayi | <a href="mailto:kendrixngayi09@gmail.com">kendrixngayi09@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
